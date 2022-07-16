@@ -1,5 +1,5 @@
-import "./App.css";
 import { ChainId, DAppProvider } from "@usedapp/core";
+import { Header } from "./components/Header";
 
 function App() {
   return (
@@ -7,7 +7,9 @@ function App() {
       config={{
         supportedChains: [ChainId.Kovan],
       }}
-    ></DAppProvider>
+    >
+      <Header />
+    </DAppProvider>
   );
 }
 
